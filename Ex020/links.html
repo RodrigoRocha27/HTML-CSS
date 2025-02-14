@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+/* # = ID
+   . = class
+   : = pseudo-class
+   ::= pseudo-element
+   > = clilder 
+*/        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+/*text-decoration: none -- tira sublinhado   font-weight: bold deixa negrito*/
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+/*Pseudoclase sivitado quando visitado fica na cor abaixo*/
+        a:visited {
+            color: darkred;
+        }
+/*text-decoration: underline passo mause fica sublinhado e preto*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+/*quando clico em cima do link fica amarelo*/
+        a:active {
+            color: yellow;
+        }
+
+        a::before {
+            content: '=';
+        }
+
+        a::after {
+            content: ' [Link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial::before {
+            content: ' +';
+        }
+
+        .especial::after {
+            content: ' +';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>    
+    <ul>        
+        <li><a href="https://youtu.be/ea6RLlLYTVg?si=tCBbvJFHiKogKprq" target="_blank">Aprendendo com Profeta Isaias</a></li>
+        <li><a href="https://youtu.be/36afDK4Dvpg?si=7D2ofD3WPkFYSFqq" class="especial">A Igreja em Antioquia</a></li>
+        <li><a href="https://youtu.be/6LQSF-puNQc?si=xTDCYm8fRSlQo-S0">Céu e o Inferno</a></li>
+    </ul>   
+</body>
+</html>
+

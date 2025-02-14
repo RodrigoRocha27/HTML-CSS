@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    
+    <video width="500" poster="imagens/pintinhos.png" controls autoplay loop>
+        <source src="midia/Meuvideo2.mp4" type="video/mp4"> <!--coloco todos tipo de arquivo para navegador compatível abrir-->
+        <source src="midia/Meuvideo2.mv4" type="video/mv4">
+        <source src="midia/Meuvideo2.webm" type="video/webm">
+        <source src="midia/Meuvideo2.ogv" type="video/ogg">
+        <p>Se o navegador não tem compatibilidade com reprodução de vídeo.</p>
+    </video>
+    <!--Hospedar no site pode ficar muito mais caro para o cliente -->
+    <!--Tenho um video de 11,5 kb com 1000 pessoas acessando tenho 11,5*1000=11500 mb/ /1024 tem 11,23 gb de uso-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ijqjqwiNdV4?si=BSCiNYbC05Asom0X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+    <!--Se utilizar video direto do YouTube fica mais leve site (compartilhar / incorporar)-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+   <iframe src="https://player.vimeo.com/video/219245372?badge=0_id=58479" width="560" height="315" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Animation Reel"></iframe>
+    
+</body>
+</html>

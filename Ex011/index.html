@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinânica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture> <!--Balswats do google = regeição de site por usuários-->
+        <source media="(max-width: 750px)" srcset="imagens/foto3-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/foto2-m.jpg" type="image/jpg">
+        <img src="imagens/foto1-g.jpg" alt="Imagem flexível">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio src="midia/tracktribe.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG--> <!--Outra forma de fazer-->
+    <h2>Outra forma de adicionar áudio</h2>
+    <!--Loop quando finaliza o áudio ele inicia novamente-->
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    <!--Essa mensagem aparecerá caso seu navegador não for compatível com mídia-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

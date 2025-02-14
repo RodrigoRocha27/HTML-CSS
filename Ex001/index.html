@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro exercício</title>
+    <link rel="shortcut icon" href="html-5-icon.png" type="image/x-icon"> 
+    <!--Aqui insiro icone no titulo tem que escolhar (link.favicon)-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Parágrafos e quebra de linha</h1>
+    <hr>
+    <p>Você pode escrever um parágrafo de qualquer jeito. 
+       Basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt;</p> <!-- LESS THAN (maior que) / GREATER THAN (menor que)-->
+    <p>Se precisar quebrar o texto em algum lugar especifico <br> como esse, você pode usar a tag &lt;br&gt;.</p>   
+    <p>Vamos adicionar alguns símbolos especiais:
+        &reg;
+        &copy;
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &Delta;
+    </p>
+    <p>Vamos adicionar alguns emoji:
+        🤑
+        &#x1F596; <!-- Quando não aceitar copiar e colar preciso do código do item ex.1F596-->
+        &#x1F913;
+    </p>
+    
+        <h1>Testando carga e Imagem</h1>
+        <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
+        <img src="logo html100.png" alt="Logo HTML 5">
+        <p>Podemos também caregar imagens que estão em sub-pastas.</p>
+        <img src="Imagem/CSS3 50.png" alt="Logo CSS3">
+        <p>Também podemos carregar imagens externas</p>
+        <img src="https://freesvg.org/img/js_logo.png" alt="Logo JavaScript">  
+
+        <h1>Entendendo Portugal</h1>
+    <h2>Introdução</h2>
+    <h3>Justificativa da Temática</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident incidunt ullam quod molestias, eum ducimus, eius facere accusamus suscipit blanditiis tempora exercitationem maiores velit deserunt voluptate quos consectetur quae!</p>
+    <h3>Carater excecional</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio fugiat placeat amet sunt deserunt? Fugiat vero sit aspernatur doloremque tempore hic nobis voluptates, error tempora repellat rem doloribus minus reiciendis!</p>
+    <h3>Perguntas de partida</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum nobis rerum dolorem eius asperiores veritatis enim recusandae deleniti minus atque omnis numquam dignissimos esse, eaque est. Magni, cum tempore?</p>
+    <h3>Metodologia de Investigação</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dicta quaerat magni id? Facilis unde rem vel, repellendus ipsum voluptates ipsa iusto omnis laborum rerum quisquam pariatur dignissimos officiis similique!</p>
+    <h2>Ordenamento do Território em Portugal</h2>
+    <h3>Os instrumentos de gestão</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, optio saepe itaque reprehenderit fuga eligendi similique incidunt deleniti, atque eius laborum modi ad perferendis voluptas iure neque corrupti in id.</p>
+    <h4>Os intrumentos de planejamento</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere cum culpa atque incidunt earum praesentium eius dolore, error dolorem necessitatibus aliquam suscipit eligendi, dolor laudantium voluptate recusandae excepturi repellat enim!</p>
+    <h4>Os Regimes Territoriais</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusamus assumenda aperiam nemo omnis a dolores vitae ab temporibus aliquam sequi fugiat pariatur, ullam fugit earum quas, expedita obcaecati at.</p>
+
+    <p>
+        Eu moro na <address>Rua das Flores, 17 - Jd Conceição</address> 
+    </p>
+    
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a TAG B (não semântica)</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a TAG STRONG (semântica)</p>
+    <h2>Italico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântico)</p>
+    <!--para inserir a TAG <i></i> selecionar o texto apertar CTRL + SHIFT + P digitar ABB (digitar i)-->
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a TAG EM (semântica).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark style="background-color: lime;">texto marcado</mark> usando a TAG MARK.</p>
+    <p>E no outro paragrafo, temos <mark>outro texto marcado</mark> no final.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com TAG U (não semântica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3.</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p>
+
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O código <cod>document.getElementyById('teste')</cod> é escrito em linguagem JavaScript.</p>
+    <pre> <!--Colocando dentro dessa TAG todo o texto fica alinhado conforme o espaço que está abaixo.-->
+        <code> <!--Essa é uma linguagem Pytom só para exemplo-->
+            num = int(input('Digite o número'))
+            if num % 2 == 0:
+                print(f'0 número {num} é PAR')
+            else:
+                print(f'0 número {num} é IMPAR')
+            print('Fim do Programa')
+        </code>
+<!--Ainda dentro de <pre> se eu der enter nas linhas ela dá espaçamento como em <br>-->
+<!--Se eu selecionar todo texto e apertar (Shift e Tab) tiro espaçamento de paragrafo-->    
+<!--E para voltar o parágrafo apenas aperta TAB-->
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <!--Como é uma citação preciso colocar entre aspas, poderia colocar aspas direto SIM, mas para dar sentido a frase coloco TAG <q>-->
+    <h2>Citações completas</h2>
+    <p>Seguno Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_All_In_One_For_Dummie/-LdlRI0fT_UC?hl=pt-BR&gbpv=1&dq=html&pg=PA123&printsec=frontcover">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>    
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou gostando!</p>
+<!--Quando passar o mouse na abreviação o texto aparece o nome completo-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+<!--dir=rtl fica ao contrario e dir=ltr escrita normal <bdo> tag inútil-->  
+
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>   <!--<li> não precisa necessáriamente ter fechamento </li>-->
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <ol type="1" start="6"> <!--start= 6 começara apartir do 6--> <!--Posso deixar somente type= 1; A; a; I; i-->   
+        <li>Acordar</li>   
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+
+    <h2>Listas não ordenadas</h2>
+    <ul> <!--type = "disc" bolinha preta "circle" bolinha vazia "square" quadradinho preto-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Cliper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bross</li>
+            <ul type="circle">
+                <li>Mario Bross 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PSP</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+    <h1>Usando links externos</h1> <!--Com o target="_blank" rel="external" abrirá nova página-->
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no Github</a></p>
+    <p>Você pode acessar meu <a href="https://youtube.com/cursoemvideo/">repositório público no Github</a></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira pagina do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">Segunda página</a></p>
+<!--Aqui o rel="next" é mais para dar sentido ao código, mas funciona sem também-->
+    <p>Você pode também acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a> </p>
+    
+    <h2>Link para download</h2>
+    <ul>
+        <li><a href="Livro/meu livro.pdf" download="meu livro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="Livro/meu livro.zip" download="meu livro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+    <h1>Imagem dinânica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture> <!--Balswats do google = regeição de site por usuários-->
+        <source media="(max-width: 750px)" srcset="imagens/foto3-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/foto2-m.jpg" type="image/jpg">
+        <img src="imagens/foto1-g.jpg" alt="Imagem flexível">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio src="midia/tracktribe.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG--> <!--Outra forma de fazer-->
+    <h2>Outra forma de adicionar áudio</h2>
+    <!--Loop quando finaliza o áudio ele inicia novamente-->
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    <!--Essa mensagem aparecerá caso seu navegador não for compatível com mídia-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    
+    <video width="500" poster="imagens/pintinhos.png" controls autoplay loop>
+        <source src="midia/Meuvideo2.mp4" type="video/mp4"> <!--coloco todos tipo de arquivo para navegador compatível abrir-->
+        <source src="midia/Meuvideo2.mv4" type="video/mv4">
+        <source src="midia/Meuvideo2.webm" type="video/webm">
+        <source src="midia/Meuvideo2.ogv" type="video/ogg">
+        <p>Se o navegador não tem compatibilidade com reprodução de vídeo.</p>
+    </video>
+    <!--Hospedar no site pode ficar muito mais caro para o cliente -->
+    <!--Tenho um video de 11,5 kb com 1000 pessoas acessando tenho 11,5*1000=11500 mb/ /1024 tem 11,23 gb de uso-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ijqjqwiNdV4?si=BSCiNYbC05Asom0X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+    <!--Se utilizar video direto do YouTube fica mais leve site (compartilhar / incorporar)-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+   <iframe src="https://player.vimeo.com/video/219245372?badge=0_id=58479" width="560" height="315" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Animation Reel"></iframe>
+</body>
+</html>
